@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo img {
+  width: 30%;
+  height: 30%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #7fc37e;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  color: #fefee2;
+}
+
+/*
+form {
+  max-width: auto;
+  margin: 0 30%;
+}
+*/
+
+
+label,
+input,
+select {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #7fc37e;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: larger;
+  box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+  color: #fefee2;
+}
+
+
+.center {
+  display: block;
+  margin-left: 25%;
+  margin-right: 30%;
+  width: 50%;
+}
+
+
+#gender {
+  color: #333333;
+}
+
+p {
+  color: #fefee2;
+  text-align: justify;
+  padding: 10%;
+  padding-top: 5%;
+}
+
+/*
+.container {
+  border-radius: 5px;
+  background-color: #4caf50;
+  padding: 20px;
+}
+*/
+
+/* Set default styles for form elements */
+#ageForm label, #ageForm input, #ageForm select, #ageForm input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #FEFEE2;
+}
+
+/* Set styles for form container */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Use flexbox to arrange form elements in a column on small screens */
+@media (max-width: 767px) {
+  #ageForm {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Use flexbox to arrange form elements in a row on larger screens */
+@media (min-width: 768px) {
+  #ageForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #ageForm label, #ageForm input, #ageForm select {
+    width: calc(50% - 10px);
+  }
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 479px) {
+  #ageForm label, #ageForm input, #ageForm select, #ageForm input[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+/* Adjust width of input and select elements for smaller screens */
+@media (max-width: 359px) {
+  #ageForm label, #ageForm input, #ageForm select {
+    width: 100%;
+  }
+}
+
+.aligncenter {
+  text-align: center;
+  color: #7fc37e;
+}
