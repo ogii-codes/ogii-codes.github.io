@@ -5,7 +5,7 @@ document.getElementById("ageForm").addEventListener("submit", function(event) {
     var lifeExpectancy = getLifeExpectancy(gender);
     var summersLeft = lifeExpectancy - age;
     var resultDiv = document.getElementById("result");
-    resultDiv.innerHTML = "<p>Based on the average life expectancy of a " + gender + ", you have about " + summersLeft + " summers left on earth.   <br><br>The 'Present' is a gift from God, so be that change you want to see in the world now!</p>";
+    resultDiv.innerHTML = "<p>Based on the average life expectancy of a "+ gender +", you have about "+ summersLeft +" summers left on earth.   <br><br>The 'Present' is a gift from God, so be that change you want to see in the world now!</p>";
   });
   
   function getLifeExpectancy(gender) {
